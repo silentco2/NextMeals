@@ -7,7 +7,6 @@ function ImagePicker({label,name}) {
     const [pickedImage,setPickedImage] = useState()
     function handleClick(){imageInput.current.click()}
     function handleChange(event){
-        console.log(event.target.value)
         const file = event.target.files[0]
         if (!file) return
         const fileReader = new FileReader()

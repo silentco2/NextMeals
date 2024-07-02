@@ -2,8 +2,12 @@ import Link from 'next/link'
 import classes from './page.module.css'
 import { Suspense } from 'react'
 import Meals from '@/components/meals/Meals'
+
+export const metadata = {
+  title: 'Meals',
+  description: 'Find food which takes you to the next level',
+};
 async function mealsPage() {
-    
     return (
         <>
             <header className={classes.header}>
